@@ -12,10 +12,10 @@ from multiprocessing import Process, Queue, Manager
 ######################################################################
 # ElasticSearch
 ######################################################################
-ES_HOST = '{}'.format('localhost')
+ES_HOST = '{}'.format('192.168.0.23')
 ES_PORT = 9200
-ES_USER = 'elastic'
-ES_PASS = 'changeme'
+ES_USER = 'foryou'
+ES_PASS = 'vhdbtltmxpawm!1'
 es = Elasticsearch(host=ES_HOST, port=ES_PORT, http_auth=(ES_USER, ES_PASS), timeout=30)
 
 app = FastAPI(docs_url=None)
